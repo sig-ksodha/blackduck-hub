@@ -625,7 +625,7 @@ Specify each parameter using the `--set key=value[,key=value]` argument to `helm
 Alternatively, a YAML file that specifies the values for the above parameters can be provided while installing the chart. For example,
 
 ```console
-$ helm install . --name ${BD_NAME} --namespace ${BD_NAME} -f <size>.yaml --set tlsCertSecretName=${BD_NAME}-blackduck-webserver-certificate -f values.yaml
+$ helm install . --name ${BD_NAME} --namespace ${BD_NAME} --set tlsCertSecretName=${BD_NAME}-blackduck-webserver-certificate -f values.yaml -f <size>.yaml
 ```
 
 > **Tip**: You can use the default [values.yaml](values.yaml)
